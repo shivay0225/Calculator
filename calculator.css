@@ -212,7 +212,7 @@ padding-bottom: 9px;
 
  .co1 {
   background-color: black;
-  height: 100vh;           /* relative to screen height */
+  height: 90vh;           /* relative to screen height */
   width: 95%;             /* take 95% width of screen */
   max-width: 400px;       /* don’t stretch beyond 360px */
   min-width: 360px;       /* works on smaller phones too */
