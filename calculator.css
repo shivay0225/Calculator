@@ -8,12 +8,12 @@
 
 } */
 
-.co2{
+/* .co2{
 
 
     background-color: black;
     height: 750px;
-}
+} */
 
 .icon {
 
@@ -31,7 +31,7 @@
 
     color: #FFFFFF;
     background-color: #A5A5A5;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 
     border-radius: 100px;
     border: 0;
@@ -212,7 +212,7 @@ padding-bottom: 9px;
 
  .co1 {
   background-color: black;
-  height: 90vh;           /* relative to screen height */
+  height: 100vh;           /* relative to screen height */
   width: 95%;             /* take 95% width of screen */
   max-width: 400px;       /* don’t stretch beyond 360px */
   min-width: 360px;       /* works on smaller phones too */
@@ -228,13 +228,39 @@ padding-bottom: 9px;
 
 /* Responsive tweaks for small phones */
 @media (max-width: 400px) {
-  .buttons {
-    top: 40%;   /* adjust button alignment */
+  .buttons { 
+ margin-left: 18px ;    
+ top: 40%;   /* adjust button alignment */
   }
 
   .buttons button {
-    font-size: 1.4rem;   /* auto shrink buttons */
-    padding: 12px 20px;
+    font-size: 1.6rem;   /* auto shrink buttons */
+    padding: 14px 25px;
+    
   }
 }
+
+/* Make all number buttons same size */
+.buttons button {
+  flex: 1;                     /* equal width in a row */
+  max-width: 70px;             /* prevent stretching */
+  aspect-ratio: 1/1;           /* keep perfectly round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust operator buttons slightly */
+.button1, .button6, .button8 {
+  flex: 1;
+  max-width: 70px;
+  aspect-ratio: 1/1;
+}
+
+/* Ensure even spacing in rows */
+.buttons .col-12 {
+  display: flex;
+  gap: 10px;                   /* uniform gap between buttons */
+}
+
 
