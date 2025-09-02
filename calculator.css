@@ -212,7 +212,7 @@ padding-bottom: 9px;
 
  .co1 {
   background-color: black;
-  height: 90vh;           /* relative to screen height */
+  height: 86vh;           /* relative to screen height */
   width: 95%;             /* take 95% width of screen */
   max-width: 400px;       /* don’t stretch beyond 360px */
   min-width: 360px;       /* works on smaller phones too */
@@ -230,7 +230,7 @@ padding-bottom: 9px;
 @media (max-width: 400px) {
   .buttons { 
  margin-left: 18px ;    
- top: 40%;   /* adjust button alignment */
+ top: 39%;   /* adjust button alignment */
   }
 
   .buttons button {
