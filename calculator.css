@@ -1,4 +1,4 @@
-.co1 {
+/* .co1 {
 
     background-color: black;
     height: 700px;
@@ -6,7 +6,7 @@
     border-radius: 50px;
     position: relative;
 
-}
+} */
 
 /* .co2{
 
@@ -206,4 +206,35 @@ padding-bottom: 9px;
 
 
 
+
+
+
+
+ .co1 {
+  background-color: black;
+  height: 90vh;           /* relative to screen height */
+  width: 95%;             /* take 95% width of screen */
+  max-width: 360px;       /* don’t stretch beyond 360px */
+  min-width: 360px;       /* works on smaller phones too */
+  border-radius: 50px;
+  position: relative;
+  margin: 0 auto;         /* center horizontally */
+}
+
+/* Make display text scale down on smaller phones */
+#display {
+  font-size: clamp(1.8rem, 6vw, 2.5rem); 
+}
+
+/* Responsive tweaks for small phones */
+@media (max-width: 400px) {
+  .buttons {
+    top: 40%;   /* adjust button alignment */
+  }
+
+  .buttons button {
+    font-size: 1.4rem;   /* auto shrink buttons */
+    padding: 12px 20px;
+  }
+}
 
