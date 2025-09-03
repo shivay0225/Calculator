@@ -231,9 +231,9 @@ padding-bottom: 9px;
 }
 
 /* Responsive tweaks for small phones */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .buttons { 
-    margin-left: 19px;    
+    margin-left: 18px;    
     top: 39%;   /* adjust button alignment */
   }
 
