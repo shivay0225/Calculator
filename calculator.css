@@ -213,7 +213,7 @@ padding-bottom: 9px;
  .co1 {
   background-color: black;
   width: 95%;              /* responsive width */
-  max-width: 450px;
+  max-width: 400px;
   min-width: 360px;
   
   height: 90vh;            /* responsive height */
@@ -231,18 +231,18 @@ padding-bottom: 9px;
 }
 
 /* Responsive tweaks for small phones */
-@media (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 400px) {
   .buttons { 
- margin-left: 18px ;    
- top: 39%;   /* adjust button alignment */
+    margin-left: 21px;    
+    top: 39%;   /* adjust button alignment */
   }
 
   .buttons button {
     font-size: 1.6rem;   /* auto shrink buttons */
     padding: 14px 25px;
-    
   }
 }
+
 
 /* Make all number buttons same size */
 .buttons button {
@@ -273,5 +273,7 @@ padding-bottom: 9px;
 .buttons .col-12:first-child {
   margin-top: 20px;   /* adjust this value to control spacing */
 }
+
+
 
 
