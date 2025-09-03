@@ -212,13 +212,17 @@ padding-bottom: 9px;
 
  .co1 {
   background-color: black;
-  height: 86vh;           /* relative to screen height */
-  width: 95%;             /* take 95% width of screen */
-  max-width: 400px;       /* don’t stretch beyond 360px */
-  min-width: 360px;       /* works on smaller phones too */
+  width: 95%;              /* responsive width */
+  max-width: 450px;
+  min-width: 360px;
+  
+  height: 90vh;            /* responsive height */
+  min-height: 700px;       /* don’t shrink below 700px */
+  max-height: 900px;       /* don’t grow beyond 900px */
+  
   border-radius: 50px;
   position: relative;
-  margin: 0 auto;         /* center horizontally */
+  margin: 0 auto;          /* center horizontally */
 }
 
 /* Make display text scale down on smaller phones */
@@ -227,7 +231,7 @@ padding-bottom: 9px;
 }
 
 /* Responsive tweaks for small phones */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .buttons { 
  margin-left: 18px ;    
  top: 39%;   /* adjust button alignment */
