@@ -180,18 +180,24 @@
 
     const display = document.getElementById("display");
 
-    let input = "0";
+    let input="0";
 
-    function update() {
+    function update(){
 
+      display.textContent= input;
 
-      display.textContent = input;
     }
 
-    document.querySelectorAll('.buttons button').forEach(btn => {
-      btn.onclick = () => {
+    document.querySelectorAll( "buttons, button").forEach( btn =>{
 
-        let val = btn.textContent.trim();
+       btn.onclick= () =>{ 
+
+        let val = btn.textContent.trim()
+
+
+     
+
+
 
         if (val === "AC") {
           input = "0";
